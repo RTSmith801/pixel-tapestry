@@ -1,0 +1,89 @@
+{
+  "../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff": {
+    "file": "assets/bootstrap-icons-jNOKqGYO.woff",
+    "src": "../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff"
+  },
+  "../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2": {
+    "file": "assets/bootstrap-icons-B-HDIRHF.woff2",
+    "src": "../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2"
+  },
+  "_gif_toggle-B9NKWl6y.css": {
+    "file": "assets/gif_toggle-B9NKWl6y.css",
+    "src": "_gif_toggle-B9NKWl6y.css"
+  },
+  "_gif_toggle-Dltqq0E_.js": {
+    "file": "assets/gif_toggle-Dltqq0E_.js",
+    "name": "gif_toggle",
+    "css": [
+      "assets/gif_toggle-B9NKWl6y.css"
+    ],
+    "assets": [
+      "assets/sun_icon_gold-CBAiGYPe.png",
+      "assets/linkedin_icon_gold-C-BPElpv.png",
+      "assets/resume_icon_blue-DK6ogLEF.png",
+      "assets/resume_icon_gold-BSGFHIX8.png",
+      "assets/bootstrap-icons-B-HDIRHF.woff2",
+      "assets/bootstrap-icons-jNOKqGYO.woff"
+    ]
+  },
+  "icons/linkedin_icon_gold.png": {
+    "file": "assets/linkedin_icon_gold-C-BPElpv.png",
+    "src": "icons/linkedin_icon_gold.png"
+  },
+  "icons/resume_icon_blue.png": {
+    "file": "assets/resume_icon_blue-DK6ogLEF.png",
+    "src": "icons/resume_icon_blue.png"
+  },
+  "icons/resume_icon_gold.png": {
+    "file": "assets/resume_icon_gold-BSGFHIX8.png",
+    "src": "icons/resume_icon_gold.png"
+  },
+  "icons/sun_icon_gold.png": {
+    "file": "assets/sun_icon_gold-CBAiGYPe.png",
+    "src": "icons/sun_icon_gold.png"
+  },
+  "images/bettertrack_screenshot.JPG": {
+    "file": "assets/bettertrack_screenshot-B_X06vLy.JPG",
+    "src": "images/bettertrack_screenshot.JPG"
+  },
+  "images/catalyst_coordination_screenshot.JPG": {
+    "file": "assets/catalyst_coordination_screenshot-BulooGEU.JPG",
+    "src": "images/catalyst_coordination_screenshot.JPG"
+  },
+  "images/chaos_circus_screenshot.JPG": {
+    "file": "assets/chaos_circus_screenshot-bZfrurlf.JPG",
+    "src": "images/chaos_circus_screenshot.JPG"
+  },
+  "images/flutter_app_screenshot.JPG": {
+    "file": "assets/flutter_app_screenshot-BnL9RlkY.JPG",
+    "src": "images/flutter_app_screenshot.JPG"
+  },
+  "images/iridium_films_screenshot.JPG": {
+    "file": "assets/iridium_films_screenshot-D6-Vmm-B.JPG",
+    "src": "images/iridium_films_screenshot.JPG"
+  },
+  "images/profile-pic.jpg": {
+    "file": "assets/profile-pic-BfmJXAw0.jpg",
+    "src": "images/profile-pic.jpg"
+  },
+  "images/recipe_app_screenshot.JPG": {
+    "file": "assets/recipe_app_screenshot-TbjzDjuY.JPG",
+    "src": "images/recipe_app_screenshot.JPG"
+  },
+  "index.html": {
+    "file": "assets/index.html-tc7jJteB.js",
+    "name": "index.html",
+    "src": "index.html",
+    "isEntry": true,
+    "imports": [
+      "_gif_toggle-Dltqq0E_.js"
+    ],
+    "assets": [
+      "assets/resume_icon_blue-DK6ogLEF.png",
+      "assets/recipe_app_screenshot-TbjzDjuY.JPG",
+      "assets/bettertrack_screenshot-B_X06vLy.JPG",
+      "assets/flutter_app_screenshot-BnL9RlkY.JPG",
+      "assets/profile-pic-BfmJXAw0.jpg"
+    ]
+  }
+}
