@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Rick Smith - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+
+  <!-- CSS Reset & Libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index.html-tc7jJteB.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/gif_toggle-Dltqq0E_.js">
+  <link rel="stylesheet" crossorigin href="/assets/gif_toggle-B9NKWl6y.css">
+</head>
+
+<body class="dark_mode_toggle">
+
+  <!-- ===========================
+       SITE HEADER
+       =========================== -->
+  <header id="mainHeader" class="header-transparent fixed-top py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <!-- MOBILE HAMBURGER -->
+      <button id="mobileMenuToggle" class="d-lg-none p-0 m-0" aria-expanded="false">
+        <i class="bi bi-list fs-1 dark_mode_accent hamburgerIconMobile"></i>
+      </button>
+
+      <!-- DESKTOP NAVIGATION -->
+      <nav id="desktopNav" class="invisible-nav d-none d-lg-flex">
+        <ul class="nav mb-0">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- DESKTOP ICONS -->
+      <div class="header-icons d-none d-lg-flex align-items-center gap-4">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB+klEQVR4nO2WTUuUURTHr4g454JYtNKmAT+EEaFfIUiUloE85z+IIRG1qi8ShW5ctY1UcDFzzlVpESltokj6BKWYmywduePMCMPzcmfmcVb+4S4eeO79nfd7jclJFvLRsu7kdV6wLLTml+mXLMQ1oZdLXG6AwoLcIejScCQT2WDV3oFwJWJZtqz/iPVzX0JNZZ0l6GHLE5bnyeC65717SpDF9hASVyfNVaoAeWQhZ+3g0ceVG52eZaHbQcXWKKKDmIKpGXwa6gIclnuCrsZBG20y1gm0EFWnm3sLcFPJP8KVLOQkCUxluRvo5XaK8S4GrM+SN/iq1pdh4NjeriX2OEHW0sAE2Q0BXzriplqhZrmfbCnrz1SPPTxyD3MvLgs9zgJb1u83sTkaDg4YLAQ5ygTXB4l+MHPvBsP9zpCFfAsBX+RbN7oZKLEilvVQcKM1fhCqM8bUBkyGhttutXbwk87AzdDLnoW8osjdo/mtcZ+GkcXNW/7bQl4Q9Is/O3VcWuj/buAZkTmh8s7t1JAQ69vcwSyvs1JhvGWh1R2Yht8UVYqZ4Auvqw8sy2kOIT7zZwVBW3DoUk9wllNiKXcEbcpb203YCfLLP5tML6L5rXGCvgmrdvlL0JV6S+UliipF/w7zNxhBv1rWP/XZzrJPkPcEeRpcRNcyfdQ52zjPiYUWXPcAAAAASUVORK5CYII=" id="toggleColorButton" class="header-icon-img clickable toggleColorButton"
+          alt="Toggle Dark Mode" />
+        <a href="https://www.linkedin.com/in/rtsmith801/" target="_blank">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABL1BMVEUAAAAUdsQMZ8QLZsMKZ8IKZsIMaMUKZsMKZsMLZ8MLZsMKZ8MNacQKZsIOZsMKZ8MMaMUKZ8IMaMUKZsP///8LZsMKZ8IOaMYNZ8MKZsIKaMMLZ8QNZsYzZswPacMNacQMZ8ULZsQLZsIKZ8MKZ8MLZ8MMaMIaZswggN8MaMQKZsILZ8MOacRVqv8LZsQLZ8MLZsILaMUQaMcKZsILZ8MOasYrgNULZsMLZsMOccZAgP8LZsMSbcgRZswLZsIKZ8MLZ8MKZsMMZ8MKacQPbMkLZ8MMZsIcccYKZsIKZscLZsIOZ8gLZ8ILZ8MKZsMLZ8ILZ8QLaMIKZsMNa8kMZsMNacQMZsIMaMMKZ8MKZ8ILb8gMZ8INaMIMZ8QNZswLZ8KAgP8KZ8ILZ8MKZ8ILZsND84JWAAAAZXRSTlMADYHP8/9C4P7Q8qtOrDfdFvssmAHZlzZNsXtFKAURJz51ufbMulgKCGfevDgDX+7vYCDK2CQGotQSBLscD9b9ofmaSSGmggn3MrQluG/67HRx5RNVPZtAx/gXKjtoFIYCxtXf6D5cyO8AAAGZSURBVHgB7dqDeixBEIbhf1Br+9hmbGfjbGzj/m8hxnTHmaqw34fLbzks7LFsxyV2rmNbOBAIkpBg4OD5QyQmFACsIAkKWrBJlI0wiXLgkigXJOyBBkwgEhEMhKIxC7Bi8ZBMIJjAkURQIpBM4UQqyR9IZ+CRSbMHslBk2QMJKBLcATcHRc5lDuShyYsHxD+ix/YlUwGKrPgf7ZEsKhTBIo4Ug1KL65IFWKVo6HGucBQmYALui5evXqfevH33/sPHT9cNQHHutZ/pwJev33Dq+4+fvIFfv6H58/cfX+B/Fc5RXcMVqK3DueobeAKNTbhA8y+OQEsrLtTWzhDI4BKZDv+By3VKB6q7hAPolg70cAV6fxTi5b4idP0DLIHBITr0axiaEY7AaIWOjRWhGmcITJDH5BQU0/4DM+q/aRaKOf+BeVIsLMJryXdgmTQr8Fr1HVgjTRle674DG6TZhMJ3YIs028yBT6SpMAfoDBMwARMwARMwARMwgScREGACJsBL/pS7Q6Ic+bEH8cEN8dET+eEZwLLDcuM/u3TynVVnZG+NAAAAAElFTkSuQmCC" id="linkedinIcon" class="header-icon-img clickable"
+            alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/RTSmith801" target="_blank">
+          <img src="data:image/svg+xml,%3csvg%20width='98'%20height='96'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M48.854%200C21.839%200%200%2022%200%2049.217c0%2021.756%2013.993%2040.172%2033.405%2046.69%202.427.49%203.316-1.059%203.316-2.362%200-1.141-.08-5.052-.08-9.127-13.59%202.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015%204.934.326%207.523%205.052%207.523%205.052%204.367%207.496%2011.404%205.378%2014.235%204.074.404-3.178%201.699-5.378%203.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283%200-5.378%201.94-9.778%205.014-13.2-.485-1.222-2.184-6.275.486-13.038%200%200%204.125-1.304%2013.426%205.052a46.97%2046.97%200%200%201%2012.214-1.63c4.125%200%208.33.571%2012.213%201.63%209.302-6.356%2013.427-5.052%2013.427-5.052%202.67%206.763.97%2011.816.485%2013.038%203.155%203.422%205.015%207.822%205.015%2013.2%200%2018.905-11.404%2023.06-22.324%2024.283%201.78%201.548%203.316%204.481%203.316%209.126%200%206.6-.08%2011.897-.08%2013.526%200%201.304.89%202.853%203.316%202.364%2019.412-6.52%2033.405-24.935%2033.405-46.691C97.707%2022%2075.788%200%2048.854%200z'%20fill='%230a66c2'/%3e%3c/svg%3e" id="githubIcon" class="header-icon-img clickable" alt="GitHub" />
+        </a>
+        <a href="https://drive.google.com/file/d/1vqVfGto_qbv9OZ-Q_geAvoFOlkkI3bne/view?usp=sharing" target="_blank">
+          <img src="/assets/resume_icon_blue-DK6ogLEF.png" id="resumeIcon" class="header-icon-img clickable" alt="Resume" />
+        </a>
+      </div>
+
+      <!-- MOBILE MENU -->
+      <div id="mobileMenu" class="d-lg-none">
+        <ul class="nav flex-column mb-3">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- MOBILE ICONS -->
+        <div class="d-flex gap-3 pt-2 border-top">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB+klEQVR4nO2WTUuUURTHr4g454JYtNKmAT+EEaFfIUiUloE85z+IIRG1qi8ShW5ctY1UcDFzzlVpESltokj6BKWYmywduePMCMPzcmfmcVb+4S4eeO79nfd7jclJFvLRsu7kdV6wLLTml+mXLMQ1oZdLXG6AwoLcIejScCQT2WDV3oFwJWJZtqz/iPVzX0JNZZ0l6GHLE5bnyeC65717SpDF9hASVyfNVaoAeWQhZ+3g0ceVG52eZaHbQcXWKKKDmIKpGXwa6gIclnuCrsZBG20y1gm0EFWnm3sLcFPJP8KVLOQkCUxluRvo5XaK8S4GrM+SN/iq1pdh4NjeriX2OEHW0sAE2Q0BXzriplqhZrmfbCnrz1SPPTxyD3MvLgs9zgJb1u83sTkaDg4YLAQ5ygTXB4l+MHPvBsP9zpCFfAsBX+RbN7oZKLEilvVQcKM1fhCqM8bUBkyGhttutXbwk87AzdDLnoW8osjdo/mtcZ+GkcXNW/7bQl4Q9Is/O3VcWuj/buAZkTmh8s7t1JAQ69vcwSyvs1JhvGWh1R2Yht8UVYqZ4Auvqw8sy2kOIT7zZwVBW3DoUk9wllNiKXcEbcpb203YCfLLP5tML6L5rXGCvgmrdvlL0JV6S+UliipF/w7zNxhBv1rWP/XZzrJPkPcEeRpcRNcyfdQ52zjPiYUWXPcAAAAASUVORK5CYII=" id="toggleColorButtonMobile"
+            class="header-icon-img clickable toggleColorButtonMobile" alt="Toggle Dark Mode" />
+          <a href="https://www.linkedin.com/in/rtsmith801/" target="_blank">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABL1BMVEUAAAAUdsQMZ8QLZsMKZ8IKZsIMaMUKZsMKZsMLZ8MLZsMKZ8MNacQKZsIOZsMKZ8MMaMUKZ8IMaMUKZsP///8LZsMKZ8IOaMYNZ8MKZsIKaMMLZ8QNZsYzZswPacMNacQMZ8ULZsQLZsIKZ8MKZ8MLZ8MMaMIaZswggN8MaMQKZsILZ8MOacRVqv8LZsQLZ8MLZsILaMUQaMcKZsILZ8MOasYrgNULZsMLZsMOccZAgP8LZsMSbcgRZswLZsIKZ8MLZ8MKZsMMZ8MKacQPbMkLZ8MMZsIcccYKZsIKZscLZsIOZ8gLZ8ILZ8MKZsMLZ8ILZ8QLaMIKZsMNa8kMZsMNacQMZsIMaMMKZ8MKZ8ILb8gMZ8INaMIMZ8QNZswLZ8KAgP8KZ8ILZ8MKZ8ILZsND84JWAAAAZXRSTlMADYHP8/9C4P7Q8qtOrDfdFvssmAHZlzZNsXtFKAURJz51ufbMulgKCGfevDgDX+7vYCDK2CQGotQSBLscD9b9ofmaSSGmggn3MrQluG/67HRx5RNVPZtAx/gXKjtoFIYCxtXf6D5cyO8AAAGZSURBVHgB7dqDeixBEIbhf1Br+9hmbGfjbGzj/m8hxnTHmaqw34fLbzks7LFsxyV2rmNbOBAIkpBg4OD5QyQmFACsIAkKWrBJlI0wiXLgkigXJOyBBkwgEhEMhKIxC7Bi8ZBMIJjAkURQIpBM4UQqyR9IZ+CRSbMHslBk2QMJKBLcATcHRc5lDuShyYsHxD+ix/YlUwGKrPgf7ZEsKhTBIo4Ug1KL65IFWKVo6HGucBQmYALui5evXqfevH33/sPHT9cNQHHutZ/pwJev33Dq+4+fvIFfv6H58/cfX+B/Fc5RXcMVqK3DueobeAKNTbhA8y+OQEsrLtTWzhDI4BKZDv+By3VKB6q7hAPolg70cAV6fxTi5b4idP0DLIHBITr0axiaEY7AaIWOjRWhGmcITJDH5BQU0/4DM+q/aRaKOf+BeVIsLMJryXdgmTQr8Fr1HVgjTRle674DG6TZhMJ3YIs028yBT6SpMAfoDBMwARMwARMwARMwgScREGACJsBL/pS7Q6Ic+bEH8cEN8dET+eEZwLLDcuM/u3TynVVnZG+NAAAAAElFTkSuQmCC" id="linkedinIconMobile" class="header-icon-img clickable"
+              alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/RTSmith801" target="_blank">
+            <img src="data:image/svg+xml,%3csvg%20width='98'%20height='96'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M48.854%200C21.839%200%200%2022%200%2049.217c0%2021.756%2013.993%2040.172%2033.405%2046.69%202.427.49%203.316-1.059%203.316-2.362%200-1.141-.08-5.052-.08-9.127-13.59%202.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015%204.934.326%207.523%205.052%207.523%205.052%204.367%207.496%2011.404%205.378%2014.235%204.074.404-3.178%201.699-5.378%203.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283%200-5.378%201.94-9.778%205.014-13.2-.485-1.222-2.184-6.275.486-13.038%200%200%204.125-1.304%2013.426%205.052a46.97%2046.97%200%200%201%2012.214-1.63c4.125%200%208.33.571%2012.213%201.63%209.302-6.356%2013.427-5.052%2013.427-5.052%202.67%206.763.97%2011.816.485%2013.038%203.155%203.422%205.015%207.822%205.015%2013.2%200%2018.905-11.404%2023.06-22.324%2024.283%201.78%201.548%203.316%204.481%203.316%209.126%200%206.6-.08%2011.897-.08%2013.526%200%201.304.89%202.853%203.316%202.364%2019.412-6.52%2033.405-24.935%2033.405-46.691C97.707%2022%2075.788%200%2048.854%200z'%20fill='%230a66c2'/%3e%3c/svg%3e" id="githubIconMobile" class="header-icon-img clickable"
+              alt="GitHub" />
+          </a>
+          <a href="https://drive.google.com/file/d/1vqVfGto_qbv9OZ-Q_geAvoFOlkkI3bne/view?usp=sharing" target="_blank">
+            <img src="/assets/resume_icon_blue-DK6ogLEF.png" id="resumeIconMobile" class="header-icon-img clickable"
+              alt="Resume" />
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===========================
+         HERO SECTION
+         =========================== -->
+    <section id="hero" class="dark_mode_toggle d-flex flex-column justify-content-center min-vh-100">
+      <div class="container text-center text-lg-start px-3">
+        <h1>
+          <div id="typewriter-output" data-phrase="Hi, my name is Rick."></div>
+          <h2>I'm a software developer.</h2>
+        </h1>
+        <div id="cta" class="d-flex flex-wrap justify-content-center justify-content-lg-start mt-3">
+          <a class="btn dark_mode_accent" href="#skills">Skills</a>
+          <a class="btn dark_mode_accent" href="#projects">Projects</a>
+          <a class="btn dark_mode_accent" href="#about">About</a>
+          <a class="btn dark_mode_accent" href="#contact">Contact</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===========================
+         SKILLS SECTION
+         =========================== -->
+    <section id="skills" class="dark_mode_accent">
+      <h3 class="fade-section">Skills</h3>
+      <span id="tech-stack" class="fade-section">
+        <!-- Each skill: icon + label -->
+        <div class="always-stack clickable">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />HTML5
+        </div>
+        <div class="always-stack clickable">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="CSS"
+            class="background-required dark_mode_toggle" />CSS3
+        </div>
+        <div class="always-stack clickable">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript" />JavaScript
+        </div>
+        <div class="always-stack clickable">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />React
+        </div>
+        <div class="always-stack clickable">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="MySQL"
+            class="background-required dark_mode_toggle" />MySQL
+        </div>
+        <div class="always-stack clickable">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"
+            class="background-required dark_mode_toggle" />C
+        </div>
+        <div class="always-stack clickable">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" />C#
+        </div>
+        <div class="always-stack clickable">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"
+            class="background-required dark_mode_toggle" />Java
+        </div>
+        <div class="always-stack clickable">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original-wordmark.svg"
+            alt="Unity" />Unity
+        </div>
+        <div class="always-stack clickable">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg"
+            alt="Firebase" />Firebase
+        </div>
+        <div class="always-stack clickable">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+            alt="Flutter" />Flutter
+        </div>
+        <div class="always-stack clickable">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VSCode"
+            class="background-required dark_mode_toggle" />VS Code
+        </div>
+        <div class="always-stack clickable">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" alt="Git" />Git
+        </div>
+        <div class="always-stack clickable">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"
+            class="background-required dark_mode_toggle" />Python
+        </div>
+        <div class="always-stack clickable">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass" />Sass
+        </div>
+        <div class="always-stack clickable">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="Selenium"
+            class="background-required dark_mode_toggle" />Selenium
+        </div>
+        <div class="always-stack clickable">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" />Linux
+        </div>
+        <div class="always-stack clickable">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash" />Bash
+        </div>
+      </span>
+    </section>
+
+    <!-- ===========================
+         PROJECTS SECTION
+         =========================== -->
+    <section id="projects" class="dark_mode_toggle">
+      <h3 class="fade-section">Projects</h3>
+
+      <!-- Project: Smith Kitchen Chronicles -->
+      <div class="fade-section project-container">
+        <div class="project-description">
+          <h4>Smith Kitchen Chronicles</h4>
+          <p>This is a fully functional CRUD application built using
+            React + Vite. The app allows users to manage their
+            collection of recipes by adding, viewing, editing, and
+            deleting recipes. Firebase serves as the backend,
+            handling data storage and retrieval.</p>
+          <h5>Features:</h5>
+          <ul>
+            <li>Multi-page layout: Main Recipe List, Recipe Details Modal, Recipe Creation & Editing Form</li>
+            <li>Users can view, add, edit, and delete recipes in real-time.</li>
+          </ul>
+          <div class="btn-container">
+            <a href="https://smith-kitchen-chronicles.netlify.app/." target="_blank" class="btn dark_mode_accent">See
+              Live</a>
+            <a href="https://github.com/RTSmith801/smith-kitchen-chronicles" target="_blank"
+              class="btn dark_mode_accent last-btn">Source
+              Code</a>
+          </div>
+        </div>
+        <img src="/assets/recipe_app_screenshot-TbjzDjuY.JPG" data-static="./images/recipe_app_screenshot.JPG"
+          data-gif="./files/recipe_app_demo.gif" alt="Recipe App Demo"
+          class="  project_demo fade-section dark_mode_accent" />
+      </div>
+
+    </section>
+
+
+    <!-- === BLUE BACKGROUND ==== -->
+    <section id="" class="projects alt-project dark_mode_accent">
+
+      <!-- Project: Bettertrack App -->
+      <div class="fade-section project-container">
+        <img src="/assets/bettertrack_screenshot-B_X06vLy.JPG" data-static="./images/bettertrack_screenshot.JPG"
+          alt="BetterTrack App Screenshot" class="project_demo fade-section" />
+        <div class="project-description">
+          <h4>BetterTrack</h4>
+          <p>BetterTrack is a responsive web application designed to
+            help users track their daily routines, fitness activities, and
+            wellness goals through a structured journaling and
+            progress system. Built with React, the app features secure
+            login authentication, a motivational Quote of the Day
+            (QOTD) fetched from an external API, and an interactive
+            calendar interface that allows users to create, edit, and
+            delete daily task cards. Each entry supports customizable
+            fields—such as title, quantity, weight, and notes—making
+            it ideal for tracking workouts, health habits, or personal
+            milestones. The application leverages React’s useState
+            and useEffect hooks for state management and dynamic
+            UI updates, with styling implemented in SASS for a
+            cohesive, modern aesthetic.</p>
+          <div class="btn-container">
+            <a href="https://bettertrack.netlify.app/" target="_blank" class="btn dark_mode_accent">See Live</a>
+            <a href="https://github.com/RTSmith801/bettertrack" target="_blank"
+              class="btn dark_mode_accent last-btn">Source
+              Code</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section id="" class="projects dark_mode_toggle">
+
+      <!-- Project: Flutter Todo App -->
+      <div class="fade-section project-container">
+        <div class="project-description">
+          <h4>Flutter Todo App</h4>
+          <p>This functional CRUD (Create, Read, Update, Delete)
+            application was developed to explore Flutter’s
+            development environment within Android Studio.
+            Leveraging Firebase, the app supports user
+            authentication via email and password. Upon signing in,
+            users can create and manage lists, update tasks, and
+            delete list items, ensuring seamless data handling within
+            the application.</p>
+          <h5>Features:</h5>
+          <ul>
+            <li>Multi-page layout: Splash, Login, Sign Up, Home/Todo Page</li>
+            <li>Email/password authentication; each user has their own task database</li>
+          </ul>
+          <div class="btn-container">
+            <a href="https://flutterfirebasetodo-6dd0b.web.app/" target="_blank" class="btn dark_mode_accent">See
+              Live</a>
+            <a href="https://github.com/RTSmith801/flutter_firebase_todo" target="_blank"
+              class="btn dark_mode_accent last-btn">Source
+              Code</a>
+          </div>
+        </div>
+        <img src="/assets/flutter_app_screenshot-BnL9RlkY.JPG" data-static="./images/flutter_app_screenshot.JPG"
+          data-gif="./files/flutter_firebase_todo_demo.gif" alt="Flutter App Demo"
+          class="  project_demo fade-section dark_mode_accent" />
+      </div>
+
+
+      <!-- Disabling. I don't want to showcase more than a couple  -->
+      <!-- <div class="fade-section text-center mt-5">
+        <a href="./projects.html" class="btn dark_mode_accent">See More Projects</a>
+      </div> -->
+
+    </section>
+
+    <!-- ===========================
+         ABOUT SECTION
+         =========================== -->
+    <section id="about" class="dark_mode_accent">
+      <h3 class="fade-section">About</h3>
+      <span class="fade-section d-flex flex-column flex-lg-row align-items-center gap-5">
+        <img src="/assets/profile-pic-BfmJXAw0.jpg" alt="Rick's Profile Picture" id="profile-pic" />
+        <div class="always-stack">
+          <p>I am actively seeking new opportunities in the realms of
+            software development and large-scale web projects. I thrive
+            on challenges that inspire innovation and bring out the best in
+            my skills.</p>
+
+
+          <p>When I'm not behind a keyboard, you'll likely find me
+            snowboarding down mountains, hiking new heights, or training
+            in jiu-jitsu — always chasing the next challenge.</p>
+
+          <a href="https://drive.google.com/file/d/1vqVfGto_qbv9OZ-Q_geAvoFOlkkI3bne/view?usp=sharing" target="_blank"
+            class="btn dark_mode_accent">Resume</a>
+        </div>
+      </span>
+    </section>
+
+    <!-- ===========================
+         CONTACT SECTION
+         =========================== -->
+    <section id="contact" class="dark_mode_toggle">
+      <h3 class="fade-section">Contact</h3>
+      <form method="POST" action="" id="contactForm" class="fade-section">
+        <input type="text" id="name" class="dark_mode_input" name="name" placeholder="Name" required />
+        <input type="email" id="email" class="dark_mode_input" name="email" placeholder="Email" required />
+        <textarea id="message" class="dark_mode_input" name="message" placeholder="Message" required></textarea>
+        <!-- <div class="g-recaptcha" data-sitekey="6LdtT6oqAAAAADvVz8DBrgwaxRVQvll9tCTr9Dnk" data-theme="dark"
+          data-size="normal"></div> -->
+        <div id="form-response" class="text-center mt-2 text-danger"></div>
+        <button type="submit" class="submit-btn btn dark_mode_accent">Send</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ===========================
+       FOOTER
+       =========================== -->
+  <footer class="d-flex flex-column align-items-center justify-content-center gap-3 py-4 bg-dark text-light">
+    <a class="nav-link" href="#hero">▵</a>
+    <nav class="d-flex gap-3">
+      <a href="https://www.linkedin.com/in/rtsmith801/" target="_blank">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAACPElEQVR42u3csWtTURTH8VNtRYUgaomLQwVLRTI5NIK0SMDBod0KbrrVTQp2coqD/0JLnXTo0i4FB20zVxDhdVCxQ+1bBAdRaEBti/k6hLa0zbs3qWLOCec338N7H/Jy37mBHBERESFHmYQqFlIloUxO9kKJFGtJKe3dfg2LqVGqPzwpVpOSE8pYTllYMQ1IxMjOk7kjCcbjAAc4oNlssGETUGOO0XrrRI5R5nU1HjFASlEOhKKm5iMMWCMvDUKeNQuAbQqSEQps6wdMSyBM6wcUg4CidkCVriCgS0cbmA1YlUhYdYA/Qh39JYYp69uo+ReZ+Vai3swNHrr9QTvN3E47PbLbTo8wZ6ud7oADjZ+JHeAABzRoFBd4xC2ukKeHswwwzCSv+PGPAcFeqOm1vN23cJE7nM5YeZJxPmkGVLgePWUc5y7fNAK+c0+aDH280Qb4yGVpIZzguSbAO85Ji6GbihbAEhflCOEMH3QACnLEUOC3AsDfhGfWAX1smgaIMGMdcFsZgEuMM8U8szw+fN5usP4UP9UAuMaLA2UV+qNVL5UAeMBWg4t8jX0OPFQBYCLzMp85H6wcUwBgKPhKehqsvakB8Dq4lfziQqD2atsB3Ii2NPcD1b3tBzyJAmYD1cfaD1iOAt63cq3/D1iPAr7oBsR/bdjSDWjmZOUABzjAAQ5wgAMc4AAHOMABDnCAAxzgADUAC3GAAxzggHYDzP8lPTENSDpgLIP1wRjmR5N0wHCY3fE8KxbH8/wBDD3D9r2n22UAAAAASUVORK5CYII=" class="clickable" alt="LinkedIn" title="LinkedIn" />
+      </a>
+      <a href="https://github.com/RTSmith801" target="_blank">
+        <img src="data:image/svg+xml,%3csvg%20width='98'%20height='96'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M48.854%200C21.839%200%200%2022%200%2049.217c0%2021.756%2013.993%2040.172%2033.405%2046.69%202.427.49%203.316-1.059%203.316-2.362%200-1.141-.08-5.052-.08-9.127-13.59%202.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015%204.934.326%207.523%205.052%207.523%205.052%204.367%207.496%2011.404%205.378%2014.235%204.074.404-3.178%201.699-5.378%203.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283%200-5.378%201.94-9.778%205.014-13.2-.485-1.222-2.184-6.275.486-13.038%200%200%204.125-1.304%2013.426%205.052a46.97%2046.97%200%200%201%2012.214-1.63c4.125%200%208.33.571%2012.213%201.63%209.302-6.356%2013.427-5.052%2013.427-5.052%202.67%206.763.97%2011.816.485%2013.038%203.155%203.422%205.015%207.822%205.015%2013.2%200%2018.905-11.404%2023.06-22.324%2024.283%201.78%201.548%203.316%204.481%203.316%209.126%200%206.6-.08%2011.897-.08%2013.526%200%201.304.89%202.853%203.316%202.364%2019.412-6.52%2033.405-24.935%2033.405-46.691C97.707%2022%2075.788%200%2048.854%200z'%20fill='%23fbfbff'/%3e%3c/svg%3e" class="clickable" alt="GitHub" title="GitHub" />
+      </a>
+      <a href="https://drive.google.com/file/d/1vqVfGto_qbv9OZ-Q_geAvoFOlkkI3bne/view?usp=sharing" target="_blank">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADBklEQVR4nO2csYrUUBSGr42ohYV266ylnfgGvoKdaGnnM/gEVhYqsoggWIqlu7aC2thbKiwWdopgsTl/9JfgVONuJpPJ5L+T+x845Z5Mvi/3ZnNyZlJyOBwOh2PkAEgnT2Qwtg8LQfsFaSHIa8VaCPQSLAR68BYCPWwLgR6whUAP1UKgB2khGcCDheiBwUL0kGAh7RAiCID3q4pXSZ4luQPwgRpmsU/qdc3bx9WuKl6L4Es11NKEfGqrT/JcBH+owZYk5HmHY7xXgy1JyLMOx/jYt34E90leWvc8Sc4ieFCCkLfLjhHBw771G5BDnSvJ3RKEfGmrT/LiOvUtZHVoex2kf15jyzoYQkqzOiL4ZvIrJIKv2uqTPB3BbwOsREmmLRTyG+CNlvqP1VCLEjLPDyRPLdYmeSGCP9VQSxTS5MMFGWcAvlMDLVZIBL8uCJmpYZYu5HBByI4aZrFCIlhVFe8cU/vJALX9pL4CrOaG/ejoiFdOEh7B682/xvMW/cpC/GDYTcSvCN4jeb7rSiR5GeDTCP6xkAG3rAh+b15EpZ5R17y1ihQ/qS8HdDetGRF8ob5Zd800dij29LrmTTXoyQgpLZOFUC7BQqAHbyHQw7YQ6AFbCPRQLQR6kBaSATxYiB4YLEQPCRaiBwML0cNABunWCfQSLAR68FsrZP6Oe7AB6KGm15e9e5/s9LtCRpfp9S6fa5LT7xaS35bVTKPvppGD/6bXl21Zs75/v7UrpLRMFkK5BAuBHryFQA/bQqAHbCHQQ7UQ6EFaSAbwUKKQob6vMXTPKYKvO/Sy9icnZIzWCXv0nNzLspDNRG69LPb8xQX3sgrJNHaoTxiZp4VAL8FCoAdvIdDDthDoAVsI9FAtBHqQxQjZdC+rby/KvSxB0HNZ/1+JnsvKb8vyXNYmQ33TROa5UfgWQgtBBle5Vwj0IC0kA3iwED0wWIgeEixEDwYWooeBDNLPIdBLsBDowVsI9LAtBHrAFgI9VAuBHqSFZAAPFqIHBgvRQ8KUhTgcDocjlR5/AZn7VsMwCsJeAAAAAElFTkSuQmCC" class="clickable" alt="Resume" title="Resume" />
+      </a>
+    </nav>
+  </footer>
+
+  <!-- ===========================
+       JAVASCRIPT
+       =========================== -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+[06-Jan-2026 11:37:33 America/Boise] PHP Warning:  Undefined array key "g-recaptcha-response" in /home2/qkbmhrmy/public_html/website_66b0bf83/send_email.php on line 4
+[06-Jan-2026 11:37:33 America/Boise] PHP Warning:  file_get_contents(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000126:SSL routines::unexpected eof while reading in /home2/qkbmhrmy/public_html/website_66b0bf83/send_email.php on line 7
+[06-Jan-2026 11:37:39 America/Boise] PHP Warning:  Undefined array key "g-recaptcha-response" in /home2/qkbmhrmy/public_html/website_66b0bf83/send_email.php on line 4
+[06-Jan-2026 11:37:39 America/Boise] PHP Warning:  file_get_contents(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000126:SSL routines::unexpected eof while reading in /home2/qkbmhrmy/public_html/website_66b0bf83/send_email.php on line 7
