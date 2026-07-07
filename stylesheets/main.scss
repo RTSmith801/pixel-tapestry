@@ -486,6 +486,16 @@ footer {
     
       }
     }
+
+    .tech-stack {
+      padding-top: 1rem;
+
+      i {
+      font-size: 3rem;
+      }
+    }
+
+    
   }
 
   .project_demo {
@@ -785,9 +795,7 @@ footer {
     }
   }
 
-  #tech-stack div {
-    font-size: 1rem;
-  }
+
 
   #projects, .projects {
     font-size: 2rem;
