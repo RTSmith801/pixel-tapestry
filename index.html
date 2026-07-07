@@ -206,115 +206,168 @@
          PROJECTS SECTION
          =========================== -->
     <section id="projects" class="dark_mode_toggle">
-      <div class="container">
-        <h3 class="fade-section">Projects</h3>
-
-        <!-- Project: Smith Kitchen Chronicles -->
-        <div class="fade-section project-container">
-          <div class="project-description">
-            <h4>Smith Kitchen Chronicles</h4>
-            <p>This is a fully functional CRUD application built using
-              React + Vite. The app allows users to manage their
-              collection of recipes by adding, viewing, editing, and
-              deleting recipes. Firebase serves as the backend,
-              handling data storage and retrieval.</p>
-            <h5>Features:</h5>
-            <ul>
-              <li>Multi-page layout: Main Recipe List, Recipe Details Modal, Recipe Creation & Editing Form</li>
-              <li>Users can view, add, edit, and delete recipes in real-time.</li>
-            </ul>
-            <div class="btn-container">
-              <a href="https://smith-kitchen-chronicles.netlify.app/." target="_blank" class="btn dark_mode_accent">See
-                Live</a>
-              <a href="https://github.com/RTSmith801/smith-kitchen-chronicles" target="_blank"
-                class="btn dark_mode_accent last-btn">Source
-                Code</a>
-            </div>
-          </div>
-          <img src="/assets/recipe_app_screenshot-TbjzDjuY.JPG" data-static="./images/recipe_app_screenshot.JPG"
-            data-gif="./files/recipe_app_demo.gif" alt="Recipe App Demo"
-            class="  project_demo fade-section dark_mode_accent" />
-        </div>
-      </div>
-
-    </section>
+      <div class="container fade-section ">
+        <h2 class="text-center">Projects</h2>
 
 
-    <!-- === BLUE BACKGROUND ==== -->
-    <section id="" class="projects alt-project dark_mode_accent">
-      <div class="container">
-        <!-- Project: Bettertrack App -->
-        <div class="fade-section project-container">
-          <img src="/assets/bettertrack_screenshot-B_X06vLy.JPG" data-static="./images/bettertrack_screenshot.JPG"
-            alt="BetterTrack App Screenshot" class="project_demo fade-section" />
-          <div class="project-description">
-            <h4>BetterTrack</h4>
-            <p>BetterTrack is a responsive web application designed to
-              help users track their daily routines, fitness activities, and
-              wellness goals through a structured journaling and
-              progress system. Built with React, the app features secure
-              login authentication, a motivational Quote of the Day
-              (QOTD) fetched from an external API, and an interactive
-              calendar interface that allows users to create, edit, and
-              delete daily task cards. Each entry supports customizable
-              fields—such as title, quantity, weight, and notes—making
-              it ideal for tracking workouts, health habits, or personal
-              milestones. The application leverages React’s useState
-              and useEffect hooks for state management and dynamic
-              UI updates, with styling implemented in SASS for a
-              cohesive, modern aesthetic.</p>
-            <div class="btn-container">
-              <a href="https://bettertrack.netlify.app/" target="_blank" class="btn dark_mode_accent">See Live</a>
-              <a href="https://github.com/RTSmith801/bettertrack" target="_blank"
-                class="btn dark_mode_accent last-btn">Source
-                Code</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
 
 
-    <section id="" class="projects dark_mode_toggle">
-      <div class="container">
-
-        <!-- Project: Flutter Todo App -->
-        <div class="fade-section project-container">
-          <div class="project-description">
-            <h4>Flutter Todo App</h4>
-            <p>This functional CRUD (Create, Read, Update, Delete)
-              application was developed to explore Flutter’s
-              development environment within Android Studio.
-              Leveraging Firebase, the app supports user
-              authentication via email and password. Upon signing in,
-              users can create and manage lists, update tasks, and
-              delete list items, ensuring seamless data handling within
-              the application.</p>
-            <h5>Features:</h5>
-            <ul>
-              <li>Multi-page layout: Splash, Login, Sign Up, Home/Todo Page</li>
-              <li>Email/password authentication; each user has their own task database</li>
-            </ul>
-            <div class="btn-container">
-              <a href="https://flutterfirebasetodo-6dd0b.web.app/" target="_blank" class="btn dark_mode_accent">See
-                Live</a>
-              <a href="https://github.com/RTSmith801/flutter_firebase_todo" target="_blank"
-                class="btn dark_mode_accent last-btn">Source
-                Code</a>
-            </div>
-          </div>
-          <img src="/assets/flutter_app_screenshot-BnL9RlkY.JPG" data-static="./images/flutter_app_screenshot.JPG"
-            data-gif="./files/flutter_firebase_todo_demo.gif" alt="Flutter App Demo"
-            class="  project_demo fade-section dark_mode_accent" />
+        <div class="project-tabs">
+          <button class="project-tab active" data-tab="web">Web Applications</button>
+          <!-- <button class="project-tab" data-tab="software">Software Development</button> -->
+          <!-- <button class="project-tab" data-tab="games">Game Development</button> -->
         </div>
 
 
-        <!-- Disabling. I don't want to showcase more than a couple  -->
-        <!-- <div class="fade-section text-center mt-5">
-        <a href="./projects.html" class="btn dark_mode_accent">See More Projects</a>
-      </div> -->
+        <!-- ****************************** -->
+        <!-- ******** Web Projects *******  -->
+        <!-- ****************************** -->
+
+
+        <div class="project-panel active" id="web">
+          <details open>
+            <!-- Project: Smith Kitchen Chronicles -->
+            <summary>Smith Kitchen Chronicles</summary>
+            <div class="project-container">
+              <div class="project-description">
+                <p>This is a fully functional CRUD application built using
+                  React + Vite. The app allows users to manage their
+                  collection of recipes by adding, viewing, editing, and
+                  deleting recipes. Firebase serves as the backend,
+                  handling data storage and retrieval.</p>
+                <h5>Features:</h5>
+                <ul>
+                  <li>Multi-page layout: Main Recipe List, Recipe Details Modal, Recipe Creation & Editing Form</li>
+                  <li>Users can view, add, edit, and delete recipes in real-time.</li>
+                </ul>
+                <div class="btn-container">
+                  <a href="https://smith-kitchen-chronicles.netlify.app/." target="_blank"
+                    class="btn dark_mode_accent">See
+                    Live</a>
+                  <a href="https://github.com/RTSmith801/smith-kitchen-chronicles" target="_blank"
+                    class="btn dark_mode_accent last-btn">Source
+                    Code</a>
+                </div>
+              </div>
+              <img src="/assets/recipe_app_screenshot-TbjzDjuY.JPG" data-static="./images/recipe_app_screenshot.JPG"
+                data-gif="./files/recipe_app_demo.gif" alt="Recipe App Demo"
+                class="project_demo fade-section dark_mode_accent" />
+            </div>
+        </div>
+        </details>
+
+
+        <details>
+          <summary>BetterTrack</summary>
+          <div class="container">
+            <!-- Project: Bettertrack App -->
+            <div class="fade-section project-container">
+              <img src="/assets/bettertrack_screenshot-B_X06vLy.JPG" data-static="./images/bettertrack_screenshot.JPG"
+                alt="BetterTrack App Screenshot" class="project_demo fade-section dark_mode_accent" />
+              <div class="project-description">
+                <p>BetterTrack is a responsive web application designed to
+                  help users track their daily routines, fitness activities, and
+                  wellness goals through a structured journaling and
+                  progress system. Built with React, the app features secure
+                  login authentication, a motivational Quote of the Day
+                  (QOTD) fetched from an external API, and an interactive
+                  calendar interface that allows users to create, edit, and
+                  delete daily task cards. Each entry supports customizable
+                  fields—such as title, quantity, weight, and notes—making
+                  it ideal for tracking workouts, health habits, or personal
+                  milestones. The application leverages React’s useState
+                  and useEffect hooks for state management and dynamic
+                  UI updates, with styling implemented in SASS for a
+                  cohesive, modern aesthetic.</p>
+                <div class="btn-container">
+                  <a href="https://bettertrack.netlify.app/" target="_blank" class="btn dark_mode_accent">See Live</a>
+                  <a href="https://github.com/RTSmith801/bettertrack" target="_blank"
+                    class="btn dark_mode_accent last-btn">Source
+                    Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+
+        <details>
+          <summary>Flutter Todo App</summary>
+          <!-- Project: Flutter Todo App -->
+          <div class="fade-section project-container">
+            <div class="project-description">
+              <h4></h4>
+              <p>This functional CRUD (Create, Read, Update, Delete)
+                application was developed to explore Flutter’s
+                development environment within Android Studio.
+                Leveraging Firebase, the app supports user
+                authentication via email and password. Upon signing in,
+                users can create and manage lists, update tasks, and
+                delete list items, ensuring seamless data handling within
+                the application.</p>
+              <h5>Features:</h5>
+              <ul>
+                <li>Multi-page layout: Splash, Login, Sign Up, Home/Todo Page</li>
+                <li>Email/password authentication; each user has their own task database</li>
+              </ul>
+              <div class="btn-container">
+                <a href="https://flutterfirebasetodo-6dd0b.web.app/" target="_blank" class="btn dark_mode_accent">See
+                  Live</a>
+                <a href="https://github.com/RTSmith801/flutter_firebase_todo" target="_blank"
+                  class="btn dark_mode_accent last-btn">Source
+                  Code</a>
+              </div>
+            </div>
+            <img src="/assets/flutter_app_screenshot-BnL9RlkY.JPG" data-static="./images/flutter_app_screenshot.JPG"
+              data-gif="./files/flutter_firebase_todo_demo.gif" alt="Flutter App Demo"
+              class="  project_demo fade-section dark_mode_accent" />
+          </div>
+        </details>
       </div>
+
+
+
+      <!-- ****************************** -->
+      <!-- ***** Software Projects ******  -->
+      <!-- ****************************** -->
+
+      <!-- <div class="project-panel" id="software">
+        <details>
+          <summary>Flutter Todo</summary>
+          <p>Replace.</p>
+        </details>
+        <details>
+          <summary>Project 2</summary>
+          <p>Replace.</p>
+        </details>
+        <details>
+          <summary>Project 3</summary>
+          <p>Replace.</p>
+        </details>
+      </div>
+    -->
+
+      <!-- ****************************** -->
+      <!-- ******* Game Projects ********  -->
+      <!-- ****************************** -->
+
+      <!-- <div class="project-panel" id="games">
+        <details>
+          <summary>Game Project 1</summary>
+          <p>Replace.</p>
+        </details>
+        <details>
+          <summary>Game Project 2</summary>
+          <p>Replace.</p>
+        </details>
+        <details>
+          <summary>Game Project 3</summary>
+          <p>Replace.</p>
+        </details>
+      </div>
+      </div>  -->
+
+
     </section>
 
     <!-- ===========================
@@ -324,17 +377,25 @@
       <div class="container">
         <h3 class="fade-section">About</h3>
         <span class="fade-section d-flex flex-column flex-lg-row align-items-center gap-5">
-          <img src="/assets/profile-pic-BfmJXAw0.jpg" alt="Rick's Profile Picture" id="profile-pic" />
+          <img src="/assets/profile-pic-BfmJXAw0.jpg" alt="Rick's Profile Picture" class="profile-pic" />
           <div class="always-stack">
-            <p>I am actively seeking new opportunities in the realms of
-              software development and large-scale web projects. I thrive
-              on challenges that inspire innovation and bring out the best in
-              my skills.</p>
+            <p>I'm a software developer and a Computer Science graduate with an unconventional path into tech. Before
+              returning to school to earn my Bachelor's degree in Computer Science from Weber State University, I built
+              a career across a wide range of industries from maintaining heavy equipment and welding, to technical
+              support, bartending, and client relationship management in finance. Each role taught me something
+              different, but they all reinforced the same passion: solving problems and building things that make
+              people's lives easier.</p>
+
+            <p>My transition into software began through independent game development, where participating
+              in game jams introduced me to C# programming, rapid prototyping, and the excitement of bringing ideas to
+              life under tight deadlines. That experience ultimately inspired me to pursue computer science full-time,
+              and since then I've continued expanding my skills through professional web development, personal projects,
+              and academic work.</p>
 
 
-            <p>When I'm not behind a keyboard, you'll likely find me
-              snowboarding down mountains, hiking new heights, or training
-              in jiu-jitsu — always chasing the next challenge.</p>
+            <p>When not behind a computer screen, you'll usually find me snowboarding, hiking, rock climbing, or
+              training in jiu-jitsu. Always chasing the next challenge.
+            </p>
 
             <a href="https://drive.google.com/file/d/1vqVfGto_qbv9OZ-Q_geAvoFOlkkI3bne/view?usp=sharing" target="_blank"
               class="btn dark_mode_accent">Resume</a>
@@ -399,6 +460,7 @@
   <script src="scripts/typewriter.js" defer></script>
   <script src="scripts/scrollToDiv.js" defer></script>
   <script src="scripts/send_email.js" defer></script>
+  <script src="scripts/projects.js" defer></script>
   <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 

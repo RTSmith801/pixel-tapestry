@@ -607,6 +607,9 @@ footer {
 }
 
 
+.project-panel{display:none}.project-panel.active{display:block}.project-tab.active{font-weight:bold}details{margin:1rem 0}
+
+
 
 /* ==========================================================================
    ABOUT
@@ -676,9 +679,9 @@ footer {
   }
 }
 
-#profile-pic {
+.profile-pic {
   width: 100%;
-  max-width: 300px;
+  max-width: 350px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
@@ -930,7 +933,7 @@ footer {
   #about {
     font-size: 1.5rem;
   }
-  #profile-pic {
+  .profile-pic {
     max-width: 200px;
   }
   #contact {
