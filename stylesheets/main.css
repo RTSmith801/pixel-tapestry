@@ -23,6 +23,7 @@ body {
 
 h3 {
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 p {
@@ -433,82 +434,29 @@ footer {
   max-width: 100%;
   box-shadow: 0px 0px 10px 5px #0a66c2;
 }
-
-.alt-project {
-  display: flex;
-  flex-direction: column;
-  font-size: 3rem;
-  padding: 10rem 2rem 30rem 2rem;
-  gap: 5rem;
-  min-height: 600px;
-  align-items: center;
-  background-color: #0a66c2;
-  color: #fbfbff;
+#projects .project-panel, .projects .project-panel {
+  display: none;
 }
-.alt-project ul {
-  list-style-type: disc;
-  list-style-position: outside;
-  padding-left: 40px;
+#projects .project-panel.active, .projects .project-panel.active {
+  display: block;
 }
-.alt-project h4 {
+#projects .project-tab, .projects .project-tab {
   font-size: 2rem;
-}
-.alt-project p {
-  font-size: 1.5rem;
-}
-.alt-project .project-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  font-size: 1.5rem;
-  justify-items: center;
-  align-items: center;
-  max-width: 1800px;
-  gap: 2rem;
-}
-.alt-project .project-container h4 {
-  margin-bottom: 1rem;
-}
-.alt-project .project-container .project-description {
   padding: 1rem;
+  border-right: 2px solid black;
 }
-.alt-project .project-container .project-description .btn-container {
-  margin-top: 1rem;
-  display: flex;
-  font-size: 1.5rem;
+#projects .project-tab:last-child, .projects .project-tab:last-child {
+  border: none;
 }
-.alt-project .project-container .project-description .btn-container .btn {
-  border-color: #fbfbff;
-  border-style: solid;
-  border-width: 2px;
-  color: #fbfbff;
-  background-color: #0a66c2;
-  width: 200px;
-  text-align: center;
-  transition: color 0.1s ease, background-color 0.2s ease;
-  margin-top: 1rem;
+#projects .project-tab.active, .projects .project-tab.active {
+  font-weight: bold;
 }
-.alt-project .project-container .project-description .btn-container .btn:hover {
-  background-color: #fbfbff;
-  color: #0a66c2;
+#projects details, .projects details {
+  border: none;
+  padding: 0.5rem;
 }
-.alt-project .project-container .project-description .btn-container .dark_accent_btn {
-  border-color: #1c1018;
-  border-style: solid;
-  border-width: 2px;
-  color: #1c1018;
-  background-color: #E1BC29;
-  width: 200px;
-  text-align: center;
-  transition: color 0.1s ease, background-color 0.2s ease;
-  margin-top: 1rem;
-}
-.alt-project .project-container .project-description .btn-container .dark_accent_btn:hover {
-  background-color: #1c1018;
-  color: #E1BC29;
-}
-.alt-project .project_demo {
-  max-width: 100%;
-  box-shadow: 0px 0px 10px 5px #1c1018;
+#projects details[open] > summary, .projects details[open] > summary {
+  margin-bottom: 0.5rem;
 }
 
 .return_home {
@@ -523,22 +471,6 @@ footer {
 .return_home .btn:hover {
   color: #0a66c2;
   background-color: #fff;
-}
-
-.project-panel {
-  display: none;
-}
-
-.project-panel.active {
-  display: block;
-}
-
-.project-tab.active {
-  font-weight: bold;
-}
-
-details {
-  margin: 1rem 0;
 }
 
 /* ==========================================================================

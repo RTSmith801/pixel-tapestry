@@ -37,7 +37,7 @@
       <nav id="desktopNav" class="invisible-nav d-none d-lg-flex">
         <ul class="nav mb-0">
           <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Tech</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -69,7 +69,7 @@
       <div id="mobileMenu" class="d-lg-none">
         <ul class="nav flex-column mb-3">
           <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Tech</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -112,7 +112,7 @@
         <h2 class="mt-3">I'm a software developer.</h2>
 
         <div id="cta" class="d-flex flex-wrap justify-content-center justify-content-lg-start mt-3">
-          <a class="btn dark_mode_accent" href="#skills">Skills</a>
+          <a class="btn dark_mode_accent" href="#skills">Tech</a>
           <a class="btn dark_mode_accent" href="#projects">Projects</a>
           <a class="btn dark_mode_accent" href="#about">About</a>
           <a class="btn dark_mode_accent" href="#contact">Contact</a>
@@ -126,7 +126,7 @@
          =========================== -->
     <section id="skills" class="dark_mode_accent fade-section text-center">
       <div class="container">
-        <h3>Skills</h3>
+        <h3>Tech Used</h3>
 
         <div class="row mt-3 g-3">
           <span id="tech-stack">
@@ -207,26 +207,25 @@
          =========================== -->
     <section id="projects" class="dark_mode_toggle">
       <div class="container fade-section ">
-        <h2 class="text-center">Projects</h2>
+        <h3 class="text-center">Projects</h3>
 
 
 
 
-        <div class="project-tabs">
+        <div class="project-tabs text-center">
           <button class="project-tab active" data-tab="web">Web Applications</button>
           <!-- <button class="project-tab" data-tab="software">Software Development</button> -->
-          <!-- <button class="project-tab" data-tab="games">Game Development</button> -->
+          <button class="project-tab" data-tab="games">Game Development</button>
         </div>
 
 
         <!-- ****************************** -->
         <!-- ******** Web Projects *******  -->
         <!-- ****************************** -->
-
-
         <div class="project-panel active" id="web">
+
+          <!-- Project: Smith Kitchen Chronicles -->
           <details open>
-            <!-- Project: Smith Kitchen Chronicles -->
             <summary>Smith Kitchen Chronicles</summary>
             <div class="project-container">
               <div class="project-description">
@@ -240,7 +239,7 @@
                   <li>Multi-page layout: Main Recipe List, Recipe Details Modal, Recipe Creation & Editing Form</li>
                   <li>Users can view, add, edit, and delete recipes in real-time.</li>
                 </ul>
-                <div class="btn-container">
+                <div class="btn-container ">
                   <a href="https://smith-kitchen-chronicles.netlify.app/." target="_blank"
                     class="btn dark_mode_accent">See
                     Live</a>
@@ -253,85 +252,86 @@
                 data-gif="./files/recipe_app_demo.gif" alt="Recipe App Demo"
                 class="project_demo fade-section dark_mode_accent" />
             </div>
-        </div>
-        </details>
+
+          </details>
 
 
-        <details>
-          <summary>BetterTrack</summary>
-          <div class="container">
-            <!-- Project: Bettertrack App -->
+          <!-- Project: Bettertrack App -->
+          <details>
+            <summary>BetterTrack</summary>
+            <div class="container">
+              <div class="fade-section project-container">
+                <img src="/assets/bettertrack_screenshot-B_X06vLy.JPG" data-static="./images/bettertrack_screenshot.JPG"
+                  alt="BetterTrack App Screenshot" class="project_demo fade-section dark_mode_accent" />
+                <div class="project-description">
+                  <p>BetterTrack is a responsive web application designed to
+                    help users track their daily routines, fitness activities, and
+                    wellness goals through a structured journaling and
+                    progress system. Built with React, the app features secure
+                    login authentication, a motivational Quote of the Day
+                    (QOTD) fetched from an external API, and an interactive
+                    calendar interface that allows users to create, edit, and
+                    delete daily task cards. Each entry supports customizable
+                    fields—such as title, quantity, weight, and notes—making
+                    it ideal for tracking workouts, health habits, or personal
+                    milestones. The application leverages React’s useState
+                    and useEffect hooks for state management and dynamic
+                    UI updates, with styling implemented in SASS for a
+                    cohesive, modern aesthetic.</p>
+                  <div class="btn-container">
+                    <a href="https://bettertrack.netlify.app/" target="_blank" class="btn dark_mode_accent">See Live</a>
+                    <a href="https://github.com/RTSmith801/bettertrack" target="_blank"
+                      class="btn dark_mode_accent last-btn">Source
+                      Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+
+
+          <!-- Project: Flutter Todo App -->
+          <details>
+            <summary>Flutter Todo App</summary>
             <div class="fade-section project-container">
-              <img src="/assets/bettertrack_screenshot-B_X06vLy.JPG" data-static="./images/bettertrack_screenshot.JPG"
-                alt="BetterTrack App Screenshot" class="project_demo fade-section dark_mode_accent" />
               <div class="project-description">
-                <p>BetterTrack is a responsive web application designed to
-                  help users track their daily routines, fitness activities, and
-                  wellness goals through a structured journaling and
-                  progress system. Built with React, the app features secure
-                  login authentication, a motivational Quote of the Day
-                  (QOTD) fetched from an external API, and an interactive
-                  calendar interface that allows users to create, edit, and
-                  delete daily task cards. Each entry supports customizable
-                  fields—such as title, quantity, weight, and notes—making
-                  it ideal for tracking workouts, health habits, or personal
-                  milestones. The application leverages React’s useState
-                  and useEffect hooks for state management and dynamic
-                  UI updates, with styling implemented in SASS for a
-                  cohesive, modern aesthetic.</p>
+
+                <p>This functional CRUD (Create, Read, Update, Delete)
+                  application was developed to explore Flutter’s
+                  development environment within Android Studio.
+                  Leveraging Firebase, the app supports user
+                  authentication via email and password. Upon signing in,
+                  users can create and manage lists, update tasks, and
+                  delete list items, ensuring seamless data handling within
+                  the application.</p>
+                <h5>Features:</h5>
+                <ul>
+                  <li>Multi-page layout: Splash, Login, Sign Up, Home/Todo Page</li>
+                  <li>Email/password authentication; each user has their own task database</li>
+                </ul>
                 <div class="btn-container">
-                  <a href="https://bettertrack.netlify.app/" target="_blank" class="btn dark_mode_accent">See Live</a>
-                  <a href="https://github.com/RTSmith801/bettertrack" target="_blank"
+                  <a href="https://flutterfirebasetodo-6dd0b.web.app/" target="_blank" class="btn dark_mode_accent">See
+                    Live</a>
+                  <a href="https://github.com/RTSmith801/flutter_firebase_todo" target="_blank"
                     class="btn dark_mode_accent last-btn">Source
                     Code</a>
                 </div>
               </div>
+              <img src="/assets/flutter_app_screenshot-BnL9RlkY.JPG" data-static="./images/flutter_app_screenshot.JPG"
+                data-gif="./files/flutter_firebase_todo_demo.gif" alt="Flutter App Demo"
+                class="  project_demo fade-section dark_mode_accent" />
             </div>
-          </div>
-        </details>
-
-
-        <details>
-          <summary>Flutter Todo App</summary>
-          <!-- Project: Flutter Todo App -->
-          <div class="fade-section project-container">
-            <div class="project-description">
-              <h4></h4>
-              <p>This functional CRUD (Create, Read, Update, Delete)
-                application was developed to explore Flutter’s
-                development environment within Android Studio.
-                Leveraging Firebase, the app supports user
-                authentication via email and password. Upon signing in,
-                users can create and manage lists, update tasks, and
-                delete list items, ensuring seamless data handling within
-                the application.</p>
-              <h5>Features:</h5>
-              <ul>
-                <li>Multi-page layout: Splash, Login, Sign Up, Home/Todo Page</li>
-                <li>Email/password authentication; each user has their own task database</li>
-              </ul>
-              <div class="btn-container">
-                <a href="https://flutterfirebasetodo-6dd0b.web.app/" target="_blank" class="btn dark_mode_accent">See
-                  Live</a>
-                <a href="https://github.com/RTSmith801/flutter_firebase_todo" target="_blank"
-                  class="btn dark_mode_accent last-btn">Source
-                  Code</a>
-              </div>
-            </div>
-            <img src="/assets/flutter_app_screenshot-BnL9RlkY.JPG" data-static="./images/flutter_app_screenshot.JPG"
-              data-gif="./files/flutter_firebase_todo_demo.gif" alt="Flutter App Demo"
-              class="  project_demo fade-section dark_mode_accent" />
-          </div>
-        </details>
-      </div>
+          </details>
+        </div>
 
 
 
-      <!-- ****************************** -->
-      <!-- ***** Software Projects ******  -->
-      <!-- ****************************** -->
 
-      <!-- <div class="project-panel" id="software">
+
+        <!-- ****************************** -->
+        <!-- ***** Software Projects ******  -->
+        <!-- ****************************** -->
+        <!-- <div class="project-panel" id="software">
         <details>
           <summary>Flutter Todo</summary>
           <p>Replace.</p>
@@ -347,27 +347,85 @@
       </div>
     -->
 
-      <!-- ****************************** -->
-      <!-- ******* Game Projects ********  -->
-      <!-- ****************************** -->
 
-      <!-- <div class="project-panel" id="games">
-        <details>
-          <summary>Game Project 1</summary>
-          <p>Replace.</p>
-        </details>
-        <details>
-          <summary>Game Project 2</summary>
-          <p>Replace.</p>
-        </details>
-        <details>
-          <summary>Game Project 3</summary>
-          <p>Replace.</p>
-        </details>
-      </div>
-      </div>  -->
+        <!-- ****************************** -->
+        <!-- ******* Game Projects ********  -->
+        <!-- ****************************** -->
+        <div class="project-panel" id="games">
 
 
+          <!-- Game: Skomp -->
+          <details open>
+            <summary>Skømp</summary>
+            <div class="project-container">
+              <div class="project-description">
+
+                <p>Skømp is a happy go-lucky platformer with pizzazz.</p>
+
+                <p>With the help of your 27 closest friends, traverse this dewy floral landscape, unlocking doors and
+                  exploring your moral code.</p>
+
+
+                <div class="btn-container">
+                  <a href="https://planeteightgames.itch.io/skmp" target="_blank" class="btn dark_mode_accent">Play
+                    this game</a>
+
+                </div>
+              </div>
+              <img src="./images/screenshot_skomp.jpg" data-static="./images/screenshot_skomp.png" data-gif="" alt=""
+                class="project_demo fade-section dark_mode_accent" />
+            </div>
+          </details>
+
+          <!-- Game: Harvester Saloon -->
+          <details>
+            <summary>Harvester Saloon</summary>
+            <div class="container">
+              <div class="fade-section project-container">
+                <img src="./images/screenshot_harvester_saloon.png" data-static="./images/screenshot_harvester_saloon"
+                  alt="" class="project_demo fade-section dark_mode_accent" />
+                <div class="project-description">
+
+                  <p>This game was created as a reimagining of the classic Attari game 'Tapper'. Tend to your bar,
+                    over-serve your patrons, harvest their organs. A bit of dark humor is always welcome here. Created
+                    for
+                    Ludum Dare 52.</p>
+
+                  <div class="btn-container">
+                    <a href="https://planeteightgames.itch.io/harvester-saloon" target="_blank"
+                      class="btn dark_mode_accent">Play This Game</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+
+
+          <!-- Game: Centipede -->
+          <details>
+            <summary>Centipede (1981)</summary>
+            <div class="project-container">
+              <div class="project-description">
+
+                <p>A clone of the original Centipede game from Atari 1991.</p>
+
+
+                <div class="btn-container">
+                  <a href="https://planeteightgames.itch.io/centipede-clone" target="_blank"
+                    class="btn dark_mode_accent">Play
+                    this game</a>
+
+                </div>
+              </div>
+              <img src="./images/screenshot_centipede.PNG" data-static="./images/screenshot_centipede.png" data-gif=""
+                alt="" class="project_demo fade-section dark_mode_accent" />
+            </div>
+          </details>
+
+
+
+
+        </div>
     </section>
 
     <!-- ===========================
@@ -375,10 +433,12 @@
          =========================== -->
     <section id="about" class="dark_mode_accent">
       <div class="container">
-        <h3 class="fade-section">About</h3>
+        <h3 class="fade-section text-center">About Me</h3>
         <span class="fade-section d-flex flex-column flex-lg-row align-items-center gap-5">
           <img src="/assets/profile-pic-BfmJXAw0.jpg" alt="Rick's Profile Picture" class="profile-pic" />
           <div class="always-stack">
+
+
             <p>I'm a software developer and a Computer Science graduate with an unconventional path into tech. Before
               returning to school to earn my Bachelor's degree in Computer Science from Weber State University, I built
               a career across a wide range of industries from maintaining heavy equipment and welding, to technical
@@ -397,6 +457,8 @@
               training in jiu-jitsu. Always chasing the next challenge.
             </p>
 
+            <p>Thanks for checking out my site! <br>- Rick</p>
+
             <a href="https://drive.google.com/file/d/1vqVfGto_qbv9OZ-Q_geAvoFOlkkI3bne/view?usp=sharing" target="_blank"
               class="btn dark_mode_accent">Resume</a>
           </div>
@@ -408,7 +470,6 @@
          CONTACT SECTION
          =========================== -->
     <section id="contact" class="dark_mode_toggle">
-
       <h3 class="fade-section">Contact</h3>
       <form method="POST" action="" id="contactForm" class="fade-section">
         <input type="text" id="name" class="dark_mode_input" name="name" placeholder="Name" required />
