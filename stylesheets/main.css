@@ -379,6 +379,7 @@ footer {
 }
 #skills .tech-tab.active {
   font-weight: bold;
+  text-decoration: underline;
 }
 #skills details {
   border: none;
@@ -479,13 +480,10 @@ footer {
 #projects .project-tab, .projects .project-tab {
   font-size: 2rem;
   padding: 1rem;
-  border-right: 2px solid black;
-}
-#projects .project-tab:last-child, .projects .project-tab:last-child {
-  border: none;
 }
 #projects .project-tab.active, .projects .project-tab.active {
   font-weight: bold;
+  text-decoration: underline;
 }
 #projects details, .projects details {
   border: none;

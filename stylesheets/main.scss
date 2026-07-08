@@ -439,7 +439,8 @@ footer {
   }
 
   .tech-tab.active{
-    font-weight:bold
+    font-weight:bold;
+    text-decoration: underline;
   }
 
   details{
@@ -567,15 +568,16 @@ footer {
   .project-tab{
     font-size: 2rem;
     padding: 1rem;
-    border-right: 2px solid black;
+    // border-right: 2px solid black;
 
     &:last-child{
-      border: none;
+      // border: none;
     }
   }
 
   .project-tab.active{
-    font-weight:bold
+    font-weight:bold;
+    text-decoration: underline;
   }
 
   details{
