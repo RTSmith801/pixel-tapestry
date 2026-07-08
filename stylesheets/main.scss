@@ -379,7 +379,7 @@ footer {
 }
 
 /* ==========================================================================
-   SKILLS
+   TECHNICAL SKILLS
    ========================================================================== */
 
 #skills {
@@ -401,9 +401,51 @@ footer {
     align-items: center;
     gap: 2rem;
   }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  
+  
+
+  .tech-panel{
+    display:none
+  }
+
+  .tech-panel.active{
+    display:block
+  }
+
+  .tech-tab{
+    font-size: 2rem;
+    padding: 1rem;
+    // border-right: 2px solid black;
+
+    &:last-child{
+      // border: none;
+    }
+  }
+
+  .tech-tab.active{
+    font-weight:bold
+  }
+
+  details{
+    border: none;
+    padding: 0.5rem;
+  }    
+  details>summary {
+    // list-style-type: '▶️';
+  }
+  details[open]>summary {
+    // list-style-type: '🔽';
+    margin-bottom: 0.5rem;
+  }
 }
 
-#tech-stack {
+.tech-stack {
+
   div {
     min-width: 100px;
     width: 100%;

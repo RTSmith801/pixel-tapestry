@@ -336,7 +336,7 @@ footer {
 }
 
 /* ==========================================================================
-   SKILLS
+   TECHNICAL SKILLS
    ========================================================================== */
 #skills {
   display: flex;
@@ -357,24 +357,47 @@ footer {
   align-items: center;
   gap: 2rem;
 }
+#skills p {
+  font-size: 1.5rem;
+}
+#skills .tech-panel {
+  display: none;
+}
+#skills .tech-panel.active {
+  display: block;
+}
+#skills .tech-tab {
+  font-size: 2rem;
+  padding: 1rem;
+}
+#skills .tech-tab.active {
+  font-weight: bold;
+}
+#skills details {
+  border: none;
+  padding: 0.5rem;
+}
+#skills details[open] > summary {
+  margin-bottom: 0.5rem;
+}
 
-#tech-stack div {
+.tech-stack div {
   min-width: 100px;
   width: 100%;
   font-size: 1.5rem;
 }
-#tech-stack img {
+.tech-stack img {
   width: 75px;
   height: 75px;
 }
-#tech-stack .background-required {
+.tech-stack .background-required {
   background-color: white;
   padding: 0.5rem;
 }
-#tech-stack .clickable {
+.tech-stack .clickable {
   cursor: auto;
 }
-#tech-stack .always-stack {
+.tech-stack .always-stack {
   display: flex;
   flex-direction: column;
   align-items: center;
