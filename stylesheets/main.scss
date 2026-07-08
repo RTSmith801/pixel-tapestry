@@ -303,15 +303,26 @@ footer {
   }
 }
 
-#typewriter-output,
-#description {
+#typewriter-output {
   font-size: 5rem;
 }
 
 #description {
+  font-size: 2.5rem;
   animation: fade-in-from-left 1.5s forwards;
-  animation-delay: 2s;
+  animation-delay: 2.5s;
   opacity: 0;
+
+  #changing-word {
+    display: inline-block;
+    color: $color04; 
+    min-width: 9ch;
+    text-align: left;
+
+    transition:
+    opacity .25s ease,
+    transform .25s ease;
+  }
 }
 
 #cta {
@@ -319,7 +330,7 @@ footer {
   display: flex;
   font-size: 1.5rem;
   animation: fade-in-from-left 1.5s forwards;
-  animation-delay: 3s;
+  animation-delay: 3.0s;
   opacity: 0;
 }
 

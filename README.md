@@ -15,3 +15,5 @@ sass stylesheets/main.scss stylesheets/main.css --watch
 <!-- To run local server -->
 python -m http.server 3000
 ```
+
+Use FileZilla to push to bluehost (website_66b0bf83)
