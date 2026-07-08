@@ -54,7 +54,7 @@ $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 if (mail($to, $subject, $body, $headers)) {
     echo json_encode([
         "status" => "success",
-        "message" => "Thanks! Your message has been sent."
+        "message" => "Thanks! I'll be in touch soon."
     ]);
 } else {
     echo json_encode([
