@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rick Smith - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+
+    <!-- CSS Reset & Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/gif_toggle-Dltqq0E_.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/gif_toggle-B9NKWl6y.css">
+</head>
+
+<body class="dark_mode_toggle">
+
+    <!-- ===========================
+       SITE HEADER
+       =========================== -->
+    <header id="mainHeader" class="header-transparent fixed-top py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <!-- MOBILE HAMBURGER -->
+            <button id="mobileMenuToggle" class="btn d-lg-none p-0 m-0" aria-expanded="false">
+                <i class="bi bi-list fs-1"></i>
+            </button>
+
+            <!-- DESKTOP NAVIGATION -->
+            <nav id="desktopNav" class=" d-none d-lg-flex">
+                <ul class="nav mb-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- DESKTOP ICONS -->
+            <div class="header-icons d-none d-lg-flex align-items-center gap-4">
+                <img src="./icons/sun_icon.png" id="toggleColorButton" class="header-icon-img clickable"
+                    alt="Toggle Dark Mode" />
+                <a href="https://www.linkedin.com/in/rtsmith801/" target="_blank">
+                    <img src="./icons/linkedin_blue.png" class="header-icon-img clickable" alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/RTSmith801" target="_blank">
+                    <img src="data:image/svg+xml,%3csvg%20width='98'%20height='96'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M48.854%200C21.839%200%200%2022%200%2049.217c0%2021.756%2013.993%2040.172%2033.405%2046.69%202.427.49%203.316-1.059%203.316-2.362%200-1.141-.08-5.052-.08-9.127-13.59%202.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015%204.934.326%207.523%205.052%207.523%205.052%204.367%207.496%2011.404%205.378%2014.235%204.074.404-3.178%201.699-5.378%203.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283%200-5.378%201.94-9.778%205.014-13.2-.485-1.222-2.184-6.275.486-13.038%200%200%204.125-1.304%2013.426%205.052a46.97%2046.97%200%200%201%2012.214-1.63c4.125%200%208.33.571%2012.213%201.63%209.302-6.356%2013.427-5.052%2013.427-5.052%202.67%206.763.97%2011.816.485%2013.038%203.155%203.422%205.015%207.822%205.015%2013.2%200%2018.905-11.404%2023.06-22.324%2024.283%201.78%201.548%203.316%204.481%203.316%209.126%200%206.6-.08%2011.897-.08%2013.526%200%201.304.89%202.853%203.316%202.364%2019.412-6.52%2033.405-24.935%2033.405-46.691C97.707%2022%2075.788%200%2048.854%200z'%20fill='%230a66c2'/%3e%3c/svg%3e" class="header-icon-img clickable" alt="GitHub" />
+                </a>
+                <a href="https://drive.google.com/file/d/1vqVfGto_qbv9OZ-Q_geAvoFOlkkI3bne/view?usp=sharing"
+                    target="_blank">
+                    <img src="/assets/resume_icon_blue-DK6ogLEF.png" class="header-icon-img clickable" alt="Resume" />
+                </a>
+            </div>
+
+            <!-- MOBILE MENU -->
+            <div id="mobileMenu" class="d-lg-none">
+                <ul class="nav flex-column mb-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+
+                <!-- MOBILE ICONS -->
+                <div class="d-flex gap-3 pt-2 border-top">
+                    <img src="./icons/sun_icon.png" id="toggleColorButtonMobile" class="header-icon-img clickable"
+                        alt="Toggle Dark Mode" />
+                    <a href="https://www.linkedin.com/in/rtsmith801/" target="_blank">
+                        <img src="./icons/linkedin_blue.png" class="header-icon-img clickable" alt="LinkedIn" />
+                    </a>
+                    <a href="https://github.com/RTSmith801" target="_blank">
+                        <img src="data:image/svg+xml,%3csvg%20width='98'%20height='96'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M48.854%200C21.839%200%200%2022%200%2049.217c0%2021.756%2013.993%2040.172%2033.405%2046.69%202.427.49%203.316-1.059%203.316-2.362%200-1.141-.08-5.052-.08-9.127-13.59%202.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015%204.934.326%207.523%205.052%207.523%205.052%204.367%207.496%2011.404%205.378%2014.235%204.074.404-3.178%201.699-5.378%203.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283%200-5.378%201.94-9.778%205.014-13.2-.485-1.222-2.184-6.275.486-13.038%200%200%204.125-1.304%2013.426%205.052a46.97%2046.97%200%200%201%2012.214-1.63c4.125%200%208.33.571%2012.213%201.63%209.302-6.356%2013.427-5.052%2013.427-5.052%202.67%206.763.97%2011.816.485%2013.038%203.155%203.422%205.015%207.822%205.015%2013.2%200%2018.905-11.404%2023.06-22.324%2024.283%201.78%201.548%203.316%204.481%203.316%209.126%200%206.6-.08%2011.897-.08%2013.526%200%201.304.89%202.853%203.316%202.364%2019.412-6.52%2033.405-24.935%2033.405-46.691C97.707%2022%2075.788%200%2048.854%200z'%20fill='%230a66c2'/%3e%3c/svg%3e" class="header-icon-img clickable" alt="GitHub" />
+                    </a>
+                    <a href="https://drive.google.com/file/d/1vqVfGto_qbv9OZ-Q_geAvoFOlkkI3bne/view?usp=sharing"
+                        target="_blank">
+                        <img src="/assets/resume_icon_blue-DK6ogLEF.png" class="header-icon-img clickable" alt="Resume" />
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section id="top"></section>
+
+
+
+        <!-- ===========================
+         PROJECTS SECTION
+         =========================== -->
+
+        <!-- === LIGHT BACKGROUND ==== -->
+        <section id="projects" class="dark_mode_toggle">
+            <h1 class="fade-section">Projects</h1>
+
+            <!-- Project: Smith Kitchen Chronicles -->
+            <div class="fade-section project-container">
+                <div class="project-description">
+                    <h4>Smith Kitchen Chronicles</h4>
+                    <p>This is a fully functional CRUD application built using
+                        React + Vite. The app allows users to manage their
+                        collection of recipes by adding, viewing, editing, and
+                        deleting recipes. Firebase serves as the backend,
+                        handling data storage and retrieval.</p>
+                    <h5>Features:</h5>
+                    <ul>
+                        <li>Multi-page layout: Main Recipe List, Recipe Details Modal, Recipe Creation & Editing Form
+                        </li>
+                        <li>Users can view, add, edit, and delete recipes in real-time.</li>
+                    </ul>
+                    <div class="btn-container">
+                        <a href="https://smith-kitchen-chronicles.netlify.app/." target="_blank" class="btn">See
+                            Live</a>
+                        <a href="https://github.com/RTSmith801/smith-kitchen-chronicles" target="_blank"
+                            class="btn last-btn">Source
+                            Code</a>
+                    </div>
+                </div>
+                <img src="/assets/recipe_app_screenshot-TbjzDjuY.JPG" data-static="./images/recipe_app_screenshot.JPG"
+                    data-gif="./files/recipe_app_demo.gif" alt="Recipe App Demo"
+                    class="toggle-gif project_demo fade-section" />
+            </div>
+
+        </section>
+
+
+        <!-- === BLUE BACKGROUND ==== -->
+        <section id="" class="alt-project">
+
+            <!-- Project: Flutter Todo App -->
+            <div class="fade-section project-container">
+                <img src="/assets/flutter_app_screenshot-BnL9RlkY.JPG" data-static="./images/flutter_app_screenshot.JPG"
+                    data-gif="./files/flutter_firebase_todo_demo.gif" alt="Flutter App Demo"
+                    class="toggle-gif project_demo fade-section" />
+                <div class="project-description">
+                    <h4>Flutter Todo App</h4>
+                    <p>This functional CRUD (Create, Read, Update, Delete)
+                        application was developed to explore Flutter’s
+                        development environment within Android Studio.
+                        Leveraging Firebase, the app supports user
+                        authentication via email and password. Upon signing in,
+                        users can create and manage lists, update tasks, and
+                        delete list items, ensuring seamless data handling within
+                        the application.</p>
+                    <h5>Features:</h5>
+                    <ul>
+                        <li>Multi-page layout: Splash, Login, Sign Up, Home/Todo Page</li>
+                        <li>Email/password authentication; each user has their own task database</li>
+                    </ul>
+                    <div class="btn-container">
+                        <a href="https://flutterfirebasetodo-6dd0b.web.app/" target="_blank" class="btn">See Live</a>
+                        <a href="https://github.com/RTSmith801/flutter_firebase_todo" target="_blank"
+                            class="btn last-btn">Source
+                            Code</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- === LIGHT BACKGROUND ==== -->
+        <section id="" class="dark_mode_toggle projects">
+
+
+            <!-- Project: Iridium Films -->
+            <div class="fade-section project-container">
+                <div class="project-description">
+                    <h4>Iridium Films</h4>
+
+                    <p>This portfolio website was developed for a Salt Lake City–
+                        based filmmaker and producer to showcase their creative
+                        work and highlight featured film projects. The site,
+                        IridiumFilms.com, consists of four primary pages, each
+                        designed to provide an engaging and cinematic viewing
+                        experience. Both the homepage and the dedicated project
+                        pages feature embedded web players for streaming high-
+                        quality video content directly on the site.</p>
+
+
+                    <p>A custom JavaScript-powered contact form was also
+                        implemented, allowing visitors to send messages directly
+                        to the client, streamlining communication and potential
+                        collaborations.</p>
+
+                    <div class="btn-container">
+                        <a href="https://iridiumfilms.com/" target="_blank" class="btn last-btn">See
+                            Live</a>
+                    </div>
+                </div>
+                <img src="/assets/iridium_films_screenshot-D6-Vmm-B.JPG" data-static="./images/iridium_films_screenshot.JPG"
+                    alt="Iridium Films Website Screenshot" class="project_demo fade-section" />
+            </div>
+
+        </section>
+
+
+        <!-- === BLUE BACKGROUND ==== -->
+        <section id="" class="alt-project">
+
+            <!-- Project: Bettertrack App -->
+            <div class="fade-section project-container">
+                <img src="/assets/bettertrack_screenshot-B_X06vLy.JPG" data-static="./images/bettertrack_screenshot.JPG"
+                    alt="BetterTrack App Screenshot" class="project_demo fade-section" />
+                <div class="project-description">
+                    <h4>BetterTrack</h4>
+                    <p>BetterTrack is a responsive web application designed to
+                        help users track their daily routines, fitness activities, and
+                        wellness goals through a structured journaling and
+                        progress system. Built with React, the app features secure
+                        login authentication, a motivational Quote of the Day
+                        (QOTD) fetched from an external API, and an interactive
+                        calendar interface that allows users to create, edit, and
+                        delete daily task cards. Each entry supports customizable
+                        fields—such as title, quantity, weight, and notes—making
+                        it ideal for tracking workouts, health habits, or personal
+                        milestones. The application leverages React’s useState
+                        and useEffect hooks for state management and dynamic
+                        UI updates, with styling implemented in SASS for a
+                        cohesive, modern aesthetic.</p>
+                    <div class="btn-container">
+                        <a href="https://bettertrack.netlify.app/" target="_blank" class="btn">See Live</a>
+                        <a href="https://github.com/RTSmith801/bettertrack" target="_blank" class="btn last-btn">Source
+                            Code</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- === LIGHT BACKGROUND ==== -->
+        <section id="" class="dark_mode_toggle projects">
+
+
+            <!-- Project: Iridium Films -->
+            <div class="fade-section project-container">
+                <div class="project-description">
+                    <h4>Catalyst Coordination</h4>
+
+                    <p>Catalyst Coordination is a professional Bootstrap-based
+                        website developed for a local marketing business in Utah.
+                        The site was designed to establish a strong online
+                        presence, highlight the company’s services, and provide
+                        potential clients with clear pathways to connect. Built
+                        with a mobile-first, responsive design, the website
+                        ensures a seamless viewing experience across all
+                        devices. Its clean layout and modern aesthetic were
+                        crafted to reflect the company’s branding and
+                        professional tone. Key sections include service
+                        overviews, client testimonials, and a custom contact form
+                        that routes inquiries directly to the business, streamlining
+                        communication and lead generation</p>
+
+                    <div class="btn-container">
+                        <a href="https://icarus.cs.weber.edu/~rs37360/web_2620_advanced_css/web-2620-final-RTSmith801/"
+                            target="_blank" class="btn">See
+                            Live</a>
+                        <a href="https://github.com/WSU-WEB2620-AA/web-2620-final-RTSmith801" target="_blank"
+                            class="btn last-btn">Source
+                            Code</a>
+                    </div>
+                </div>
+                <img src="/assets/catalyst_coordination_screenshot-BulooGEU.JPG"
+                    data-static="./images/catalyst_coordination_screenshot.JPG"
+                    alt="Catalyst Coordination Website Screenshot" class="project_demo fade-section" />
+            </div>
+
+        </section>
+
+
+        <!-- === BLUE BACKGROUND ==== -->
+        <section id="" class="alt-project">
+
+            <!-- Project: Bettertrack App -->
+            <div class="fade-section project-container">
+                <img src="/assets/chaos_circus_screenshot-bZfrurlf.JPG" data-static="./images/chaos_circus_screenshot.JPG"
+                    alt="Chaos Circus Screenshot" class="project_demo fade-section" />
+                <div class="project-description">
+                    <h4>Chaos Circus Co</h4>
+                    <p>This will serve as the second project for the Web 2890
+                        course. I will be building a custom website for a local
+                        entertainment production company based here in Salt
+                        Lake. The company currently uses Instagram and
+                        Facebook to post information regarding upcoming events.
+                        Eventbrite is utilized for ticket sales. The website I will
+                        build will create a central hub that will automatically
+                        retrieve and display their latest posts and events using
+                        API calls.</p>
+                    <div class="btn-container">
+                        <a href="#" target="_blank" class="btn">Case Study</a>
+                        <a href="https://chaos-circus.netlify.app/" target="_blank" class="btn">See Live</a>
+                        <a href="https://github.com/WSU-SoC-WEB2890-CU/web2890-project-2-RTSmith801" target="_blank"
+                            class="btn last-btn">Source
+                            Code</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- <div class="fade-section text-center mb-0 return_home">
+                <a href="./index.html#contact" class="btn">Contact Me</a>
+            </div> -->
+
+        </section>
+
+
+        <!-- ===========================
+       FOOTER
+       =========================== -->
+        <footer class="d-flex flex-column align-items-center justify-content-center gap-3 py-4 bg-dark text-light">
+            <a class="nav-link" href="#top">▵</a>
+            <nav class="d-flex gap-3">
+                <a href="https://www.linkedin.com/in/rtsmith801/" target="_blank">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAACPElEQVR42u3csWtTURTH8VNtRYUgaomLQwVLRTI5NIK0SMDBod0KbrrVTQp2coqD/0JLnXTo0i4FB20zVxDhdVCxQ+1bBAdRaEBti/k6hLa0zbs3qWLOCec338N7H/Jy37mBHBERESFHmYQqFlIloUxO9kKJFGtJKe3dfg2LqVGqPzwpVpOSE8pYTllYMQ1IxMjOk7kjCcbjAAc4oNlssGETUGOO0XrrRI5R5nU1HjFASlEOhKKm5iMMWCMvDUKeNQuAbQqSEQps6wdMSyBM6wcUg4CidkCVriCgS0cbmA1YlUhYdYA/Qh39JYYp69uo+ReZ+Vai3swNHrr9QTvN3E47PbLbTo8wZ6ud7oADjZ+JHeAABzRoFBd4xC2ukKeHswwwzCSv+PGPAcFeqOm1vN23cJE7nM5YeZJxPmkGVLgePWUc5y7fNAK+c0+aDH280Qb4yGVpIZzguSbAO85Ji6GbihbAEhflCOEMH3QACnLEUOC3AsDfhGfWAX1smgaIMGMdcFsZgEuMM8U8szw+fN5usP4UP9UAuMaLA2UV+qNVL5UAeMBWg4t8jX0OPFQBYCLzMp85H6wcUwBgKPhKehqsvakB8Dq4lfziQqD2atsB3Ii2NPcD1b3tBzyJAmYD1cfaD1iOAt63cq3/D1iPAr7oBsR/bdjSDWjmZOUABzjAAQ5wgAMc4AAHOMABDnCAAxzgADUAC3GAAxzggHYDzP8lPTENSDpgLIP1wRjmR5N0wHCY3fE8KxbH8/wBDD3D9r2n22UAAAAASUVORK5CYII=" class="clickable" alt="LinkedIn" title="LinkedIn" />
+                </a>
+                <a href="https://github.com/RTSmith801" target="_blank">
+                    <img src="data:image/svg+xml,%3csvg%20width='98'%20height='96'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M48.854%200C21.839%200%200%2022%200%2049.217c0%2021.756%2013.993%2040.172%2033.405%2046.69%202.427.49%203.316-1.059%203.316-2.362%200-1.141-.08-5.052-.08-9.127-13.59%202.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015%204.934.326%207.523%205.052%207.523%205.052%204.367%207.496%2011.404%205.378%2014.235%204.074.404-3.178%201.699-5.378%203.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283%200-5.378%201.94-9.778%205.014-13.2-.485-1.222-2.184-6.275.486-13.038%200%200%204.125-1.304%2013.426%205.052a46.97%2046.97%200%200%201%2012.214-1.63c4.125%200%208.33.571%2012.213%201.63%209.302-6.356%2013.427-5.052%2013.427-5.052%202.67%206.763.97%2011.816.485%2013.038%203.155%203.422%205.015%207.822%205.015%2013.2%200%2018.905-11.404%2023.06-22.324%2024.283%201.78%201.548%203.316%204.481%203.316%209.126%200%206.6-.08%2011.897-.08%2013.526%200%201.304.89%202.853%203.316%202.364%2019.412-6.52%2033.405-24.935%2033.405-46.691C97.707%2022%2075.788%200%2048.854%200z'%20fill='%23fbfbff'/%3e%3c/svg%3e" class="clickable" alt="GitHub" title="GitHub" />
+                </a>
+                <a href="https://drive.google.com/file/d/1vqVfGto_qbv9OZ-Q_geAvoFOlkkI3bne/view?usp=sharing"
+                    target="_blank">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADBklEQVR4nO2csYrUUBSGr42ohYV266ylnfgGvoKdaGnnM/gEVhYqsoggWIqlu7aC2thbKiwWdopgsTl/9JfgVONuJpPJ5L+T+x845Z5Mvi/3ZnNyZlJyOBwOh2PkAEgnT2Qwtg8LQfsFaSHIa8VaCPQSLAR68BYCPWwLgR6whUAP1UKgB2khGcCDheiBwUL0kGAh7RAiCID3q4pXSZ4luQPwgRpmsU/qdc3bx9WuKl6L4Es11NKEfGqrT/JcBH+owZYk5HmHY7xXgy1JyLMOx/jYt34E90leWvc8Sc4ieFCCkLfLjhHBw771G5BDnSvJ3RKEfGmrT/LiOvUtZHVoex2kf15jyzoYQkqzOiL4ZvIrJIKv2uqTPB3BbwOsREmmLRTyG+CNlvqP1VCLEjLPDyRPLdYmeSGCP9VQSxTS5MMFGWcAvlMDLVZIBL8uCJmpYZYu5HBByI4aZrFCIlhVFe8cU/vJALX9pL4CrOaG/ejoiFdOEh7B682/xvMW/cpC/GDYTcSvCN4jeb7rSiR5GeDTCP6xkAG3rAh+b15EpZ5R17y1ihQ/qS8HdDetGRF8ob5Zd800dij29LrmTTXoyQgpLZOFUC7BQqAHbyHQw7YQ6AFbCPRQLQR6kBaSATxYiB4YLEQPCRaiBwML0cNABunWCfQSLAR68FsrZP6Oe7AB6KGm15e9e5/s9LtCRpfp9S6fa5LT7xaS35bVTKPvppGD/6bXl21Zs75/v7UrpLRMFkK5BAuBHryFQA/bQqAHbCHQQ7UQ6EFaSAbwUKKQob6vMXTPKYKvO/Sy9icnZIzWCXv0nNzLspDNRG69LPb8xQX3sgrJNHaoTxiZp4VAL8FCoAdvIdDDthDoAVsI9FAtBHqQxQjZdC+rby/KvSxB0HNZ/1+JnsvKb8vyXNYmQ33TROa5UfgWQgtBBle5Vwj0IC0kA3iwED0wWIgeEixEDwYWooeBDNLPIdBLsBDowVsI9LAtBHrAFgI9VAuBHqSFZAAPFqIHBgvRQ8KUhTgcDocjlR5/AZn7VsMwCsJeAAAAAElFTkSuQmCC" class="clickable" alt="Resume" title="Resume" />
+                </a>
+            </nav>
+        </footer>
+
+        <!-- ===========================
+       JAVASCRIPT
+       =========================== -->
+
+
+</body>
+
+</html>

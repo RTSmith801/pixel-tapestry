@@ -1,0 +1,148 @@
+# TrackMate
+## Building Administrative Tools for University Operations
+
+**Project Type:** University Capstone Project
+**Organization:** Weber State University
+**Team Size:** 4 Developers
+**Development Period:** Fall 2026 – Present
+**My Role:** Full-Stack Software Developer
+
+### Project Overview
+
+TrackMate is a full-stack web application designed to support administrative operations at Weber State University.
+
+The application provides administrative personnel with a centralized platform for managing academic information,
+coordinating course schedules, maintaining institutional directory records, and accessing financial information.
+
+Rather than developing an application from scratch, our team inherited an existing codebase and worked with the
+university's Administrative Team to expand its functionality and improve the overall user experience.
+
+This required understanding an established application architecture, working with existing data models and
+relationships, and developing features that integrated with the application's existing frontend and backend.
+
+### The Problem
+
+University administrative workflows depend on accurate and accessible information across multiple interconnected areas.
+
+Buildings, classrooms, departments, professors, courses, semesters, schedules, and financial records all contain
+relationships that need to be maintained consistently.
+
+The goal of TrackMate is to provide administrative personnel with a unified application for managing this information
+rather than relying on disconnected workflows.
+
+Our team works with an Administrative Specialist through biweekly meetings to review requirements, discuss
+functionality, and receive feedback on the application's development.
+
+### My Role & Contributions
+
+As a member of a four-person development team, I have contributed to both frontend and backend development, focusing on
+expanding administrative functionality and improving the usability and maintainability of the application.
+
+My contributions include:
+
+**1. Directory Management**
+
+Developed and improved administrative directory functionality for managing institutional records.
+
+- Implemented CRUD functionality across buildings, rooms, departments, professors, courses, subjects, and semesters.
+- Developed a reusable `DirectoryEditor` React component to reduce duplicated code across administrative pages.
+- Implemented searchable directory tables and reusable column-sorting functionality.
+- Improved deletion workflows by introducing confirmation dialogs and backend checks for related database records.
+- Worked with MongoDB relationships and populated references to support accurate record management.
+
+**2. Authentication & Role-Based Access**
+
+Contributed to application access control and administrative navigation.
+
+- Worked with JWT-based authentication using HTTP-only cookies.
+- Implemented and refined role-based access for standard users, administrators, and super administrators.
+- Improved navigation visibility based on user permissions.
+- Worked with backend authorization middleware to protect administrative functionality.
+
+**3. Financial Management**
+
+Expanded the application's financial forecasting functionality.
+
+- Implemented functionality for creating and editing forecast transactions.
+- Added support for deleting forecast records with confirmation workflows.
+- Worked with MongoDB models and API endpoints to support financial data operations.
+
+**4. Scheduling & User Interface Improvements**
+
+Contributed to improvements across the scheduling experience.
+
+- Worked on schedule filtering and data presentation.
+- Improved administrative interfaces and consistency across application pages.
+- Addressed frontend and backend integration issues affecting how application data is retrieved and displayed.
+
+### Technical Implementation
+
+**Frontend**
+
+React and JavaScript provide the application's interactive user interface. Reusable components, shared context, and
+Axios API requests help organize application functionality and communicate with backend services.
+
+**Backend**
+
+Node.js and Express provide the REST API layer. Backend controllers handle application operations, while authentication
+and authorization middleware control access to protected functionality.
+
+**Database**
+
+MongoDB and Mongoose manage application records and relationships. Referenced documents connect related entities such as
+buildings, rooms, departments, and professors.
+
+**Authentication**
+
+JWT-based authentication using HTTP-only cookies provides authenticated access to the application. Role-based
+authorization distinguishes standard users from administrative users.
+
+### Challenges & Problem Solving
+
+**Working Within an Existing Codebase**
+
+One of the biggest challenges was understanding an application that already contained established components, database
+models, API routes, and authentication logic.
+
+Rather than introducing unnecessary architectural changes, I worked within the existing structure and developed
+functionality that integrated with the application's established patterns.
+
+**Managing Interconnected Data**
+
+Directory records are not independent. For example, rooms reference buildings, while other institutional records may
+reference departments or professors.
+
+Implementing deletion safeguards required understanding these relationships and ensuring that records could not be
+removed without considering their dependencies.
+
+**Building Maintainable Frontend Components**
+
+As administrative functionality expanded, duplicating similar forms and table logic across multiple pages became
+increasingly difficult to maintain.
+
+Developing reusable components helped establish more consistent interfaces and reduced repeated implementation work.
+
+### What I Learned
+
+TrackMate has provided practical experience working on an existing full-stack application in a collaborative development
+environment.
+
+Some of the most valuable lessons have involved:
+
+- Navigating and extending an established software architecture.
+- Designing reusable React components.
+- Connecting frontend functionality with REST APIs and MongoDB.
+- Implementing authentication and role-based authorization.
+- Working with relational dependencies in a document-oriented database.
+- Translating stakeholder feedback into application functionality.
+- Collaborating with a development team and incorporating feedback through recurring client meetings.
+
+The project has reinforced the importance of writing maintainable software that addresses actual user requirements
+rather than focusing exclusively on implementing individual features.
+
+### Technology Stack
+
+React · JavaScript · Node.js · Express · MongoDB · Mongoose · HTML · CSS · Git
+
+**Project Links:**
+[GitHub Repository](#) · [Return to Pixel Tapestry](../index.html#projects)
